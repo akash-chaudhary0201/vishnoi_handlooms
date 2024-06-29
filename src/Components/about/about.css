@@ -1,0 +1,17 @@
+.akash {
+    color: #006467;
+    font-size: 45px;
+    position: relative;
+}
+
+.akash::before {
+    content: "";
+    background-color: #006467;
+    height: 7px;
+    width: 80%;
+    border-radius: 10px;
+    top: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

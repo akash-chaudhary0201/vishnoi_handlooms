@@ -32,7 +32,8 @@ const Navvbar = () => {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="#about"
+                as={Link}
+                to="/about"
                 className="fs-5 me-4 custom-nav-link relative"
               >
                 About
