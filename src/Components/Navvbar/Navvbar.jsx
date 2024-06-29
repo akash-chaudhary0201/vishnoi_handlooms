@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { FaUser } from "react-icons/fa";
 import "./Navbarr.css";
+import { list } from "postcss";
+import { Link } from "react-router-dom";
 
 const Navvbar = () => {
   return (
@@ -12,7 +14,7 @@ const Navvbar = () => {
         fixed="top"
         collapseOnSelect
         expand="lg"
-        className="  rounded-full akashh "
+        className="akashh custom-navbar "
       >
         <Container>
           <Navbar.Brand href="#home">
@@ -23,7 +25,8 @@ const Navvbar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto ">
               <Nav.Link
-                href="#home"
+                as={Link}
+                to="/"
                 className="fs-5  me-4 custom-nav-link relative"
               >
                 Home
@@ -35,7 +38,8 @@ const Navvbar = () => {
                 About
               </Nav.Link>
               <Nav.Link
-                href="#products"
+                as={Link}
+                to="/products"
                 className="fs-5 me-4 custom-nav-link relative"
               >
                 Products

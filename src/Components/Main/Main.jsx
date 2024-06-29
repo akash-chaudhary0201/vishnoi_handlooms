@@ -1,35 +1,51 @@
 import React from "react";
-import { MdOutlineReadMore } from "react-icons/md";
+import "./Main.css";
+import main from "../../assets/main.jpg";
+import Cate from "../Categories/Cate";
+import Trust from "../trust/Trust";
+import Achie from "../ach/Achie";
+import ConImg from "../Contact/ConImg";
+import Footer from "../Footer/Footer";
 
 const Main = () => {
   return (
-    <div className="">
-      <p className="text-[25px]">Vishnoi Handlooms</p>
-      <h1 className="text-[65px] text-[#006769] font-extrabold  uppercase">
-        Build Your Home, Sweet Home
-      </h1>
-      <p className="text-[18px] text-white mt-[20px]">
-        Welcome to Vishnoi Handlooms, where finding your perfect furniture for
-        your home is just a few clicks away.
-      </p>
-      <div className="bg-white backdrop-filter p-3 mt-[30px] flex gap-[80px] items-center justify-around  backdrop-blur-sm  bg-opacity-50 rounded-full relative z-10">
-        <button className="text-[22px] text-[#006769] font-semibold">
-          Cushions
-        </button>
-        <button className="text-[22px] text-[#006769] font-semibold">
-          Carpets
-        </button>
-        <button className="text-[22px] text-[#006769] font-semibold">
-          Diwan Sets
-        </button>
-        <button className="text-[22px] text-[#006769] font-semibold">
-          Table Covers
-        </button>
-        <div className="flex justify-center items-center cursor-pointer  text-[40px] bg-[#006769] rounded-full text-white p-2">
-          <MdOutlineReadMore />
+    <>
+      <div className="relative h-screen overflow-hidden">
+        <img
+          src={main}
+          className="absolute inset-0 object-cover w-full h-full "
+          alt=""
+        />
+        <div className="">
+          <div className="absolute flex  justify-center items-center pt-[150px] pl-[20px] pr-[20px]  ">
+            <div>
+              <p className="head_para text-[25px]">Vishnoi Handlooms</p>
+              <h1 className="text-[55px] text-[#006769]">
+                Build Your Home Sweet Home
+              </h1>
+              <p className="text-[20px] main_para ml-[20px] mt-[20px]">
+                Welcome to Vishnoi Handlooms, where finding your perfect
+                furnishing elements for your home is just a few clicks away
+              </p>
+              <button className="bg-white backdrop-filter backdrop-blur-sm mt-[20px]  bg-opacity-50 p-[10px] w-[200px] text-[20px] rounded-lg text-[#006769]">
+                Explore More
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div>
+        <Cate />
+      </div>
+      <div>
+        <Achie />
+      </div>
+      <div>
+        <Trust />
+      </div>
+      <ConImg />
+      <Footer />
+    </>
   );
 };
 
