@@ -21,7 +21,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white flex justify-center items-center mt-[20px]">
+        <div className="bg-white flex justify-center items-center mt-[20px] pb-[200px]">
           <div className="h-[300px] w-[300px] mt-[10px] text-center">
             <img
               className="rounded-lg"
@@ -30,7 +30,10 @@ const About = () => {
             />
             <h1>Uncle's name</h1>
             <p className="text-[#006467] text-[20px]">
-              A little bit information about Vishnoi Handlooms
+              A little bit information about Vishnoi Handlooms Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Quis beatae animi
+              accusantium sequi quia totam fugiat dolore accusamus dignissimos
+              hic.
             </p>
           </div>
         </div>
