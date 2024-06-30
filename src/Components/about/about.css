@@ -1,12 +1,12 @@
 .akash {
-    color: #006467;
+    color: white;
     font-size: 45px;
     position: relative;
 }
 
 .akash::before {
     content: "";
-    background-color: #006467;
+    background-color: white;
     height: 7px;
     width: 80%;
     border-radius: 10px;
