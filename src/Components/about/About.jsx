@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 const About = () => {
   return (
     <>
-      <div className="pt-[100px] min-h-screen bg-[#006467] ">
+      {/* <div className="pt-[100px] min-h-screen bg-[#006467] ">
         <div className="flex flex-col  justify-center items-center ">
           <div>
             <div className=" px-[10px]">
@@ -38,6 +38,21 @@ const About = () => {
           </div>
         </div>
         <Footer />
+      </div> */}
+      <div className="pt-[100px]">
+        <div>
+          <div>
+            <h1>
+              Transforming your house into a home with elegant and timeless
+              furnishings
+            </h1>
+            <p>
+              <span>Name</span> Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Tenetur deleniti nobis ea fugit dolorum impedit
+              ipsam, perspiciatis quae incidunt itaque!
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
