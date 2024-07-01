@@ -1,17 +1,7 @@
-.akash {
-    color: white;
-    font-size: 45px;
-    position: relative;
-}
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
-.akash::before {
-    content: "";
-    background-color: white;
-    height: 7px;
-    width: 80%;
-    border-radius: 10px;
-    top: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.akash{
+    font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
 }

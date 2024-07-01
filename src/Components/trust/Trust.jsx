@@ -1,11 +1,12 @@
 import React from "react";
 import "./trust.css";
 import image from "../../assets/trust.avif";
+import "../Main/Main.css";
 
 const Trust = () => {
   return (
     <>
-      <div className="flex justify-center flex-col bg-white p-[20px] items-center">
+      <div className="flex justify-center flex-col bg-white p-[20px] items-center akash">
         <div>
           <div className="h-[400px] w-[400px]">
             <img

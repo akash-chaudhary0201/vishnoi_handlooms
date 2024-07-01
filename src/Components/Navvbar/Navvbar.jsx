@@ -47,7 +47,11 @@ const Navvbar = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#contact" className="fs-5">
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                className="fs-5 me-4 custom-nav-link relative"
+              >
                 Contact
               </Nav.Link>
               <Nav.Link href="#user" className="fs-3 ms-2">

@@ -5,7 +5,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Product from "./Components/Products/Product";
 import ProductDetails from "./Components/Products/ProductDetails";
 import Footer from "./Components/Footer/Footer";
-import About from "./Components/about/About";
+import About from "./Components/AboutUs/About";
+import "./index.css";
+import ContactUs from "./Components/contactUs/ContactUs";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Product />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/category/:id" element={<ProductDetails />} />
         </Routes>
       </BrowserRouter>

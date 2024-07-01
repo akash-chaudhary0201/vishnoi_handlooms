@@ -1,10 +1,11 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import "../Main/Main.css";
 
 const Cate = () => {
   return (
     <>
-      <div className="p-[20px]">
+      <div className="p-[20px] akash">
         <Marquee>
           <div>
             <ul className="flex">

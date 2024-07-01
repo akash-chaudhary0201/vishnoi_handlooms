@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../assets/consim.avif";
+import "../Main/Main.css";
 
 const ConImg = () => {
   return (
@@ -7,7 +8,7 @@ const ConImg = () => {
       style={{
         backgroundImage: `url(https://images.unsplash.com/photo-1627296345489-faf81a8f15ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
       }}
-      className="h-[40vh] bg-cover flex justify-center items-center relative bg-center bg-no-repeat bg-fixed"
+      className="h-[40vh] akash bg-cover flex justify-center items-center relative bg-center bg-no-repeat bg-fixed"
     >
       <div className="bg-white backdrop-filter flex flex-col items-center justify-around rounded-lg backdrop-blur-sm bg-opacity-50 relative z-10 text-center w-[90%] max-w-[500px] md:w-[50%] md:max-w-[600px] h-auto p-6 text-[#006467]">
         {/* Adjusted width and max-width for responsiveness */}

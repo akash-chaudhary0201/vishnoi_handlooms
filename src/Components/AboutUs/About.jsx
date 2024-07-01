@@ -1,58 +1,38 @@
 import React from "react";
 import "./about.css";
+import blob from "../../assets/blob.png";
 import Footer from "../Footer/Footer";
 
 const About = () => {
   return (
     <>
-      {/* <div className="pt-[100px] min-h-screen bg-[#006467] ">
-        <div className="flex flex-col  justify-center items-center ">
-          <div>
-            <div className=" px-[10px]">
-              <h1 className="text-center akash">About Us</h1>
-              <div className="bg-white flex justify-center items-center text-center p-[20px] mt-[40px] text-[#006467] text-[20px] rounded-lg shadow-xl">
-                <p>
-                  Our mission is to make our home a sanctuary of comfort and
-                  beauty. With a focuson quality craftsmanship and innovative
-                  design, we provide furnishing that cater to your every need
-                  and style preference.
-                </p>
-              </div>
+      <div className="pt-[100px] akash">
+        <div className="flex flex-col justify-center items-center px-[20px] gap-[40px]">
+          <h1 className="text-[45px] text-[#006476] text-center">About Us</h1>
+          <div className="flex justify-center items-center flex-col gap-[30px]">
+            <h1 className="text-[40px] text-center">
+              Vishnoi Handlooms: Tradition, Quality, and Style
+            </h1>
+            <div>
+              <img src={blob} alt="" />
             </div>
-          </div>
-        </div>
-        <div className="bg-white flex justify-center items-center mt-[20px] pb-[200px]">
-          <div className="h-[300px] w-[300px] mt-[10px] text-center">
-            <img
-              className="rounded-lg"
-              src="https://images.unsplash.com/photo-1532009877282-3340270e0529?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-            <h1>Uncle's name</h1>
-            <p className="text-[#006467] text-[20px]">
-              A little bit information about Vishnoi Handlooms Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Quis beatae animi
-              accusantium sequi quia totam fugiat dolore accusamus dignissimos
-              hic.
+            <p className="text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+              officia dolorum aliquam alias soluta, eveniet quaerat commodi?
+              Molestias ut accusamus dolorum amet porro ex eum cumque, ipsum,
+              culpa iusto pariatur! Maxime aliquam iusto dolorem corrupti sint,
+              corporis labore a reiciendis modi, fugit eos illo mollitia omnis
+              accusantium perspiciatis? Harum illo mollitia earum dolores id,
+              omnis totam! Tenetur obcaecati dolore possimus recusandae velit
+              doloribus autem officiis doloremque? Quasi consequuntur cumque
+              mollitia optio, vitae fugiat nobis quos at unde atque tenetur
+              minima minus recusandae libero explicabo temporibus molestias eos,
+              nulla reiciendis totam velit consequatur excepturi! Cum corporis
+              ipsa molestiae! Voluptatem, cupiditate hic.
             </p>
           </div>
         </div>
         <Footer />
-      </div> */}
-      <div className="pt-[100px]">
-        <div>
-          <div>
-            <h1>
-              Transforming your house into a home with elegant and timeless
-              furnishings
-            </h1>
-            <p>
-              <span>Name</span> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Tenetur deleniti nobis ea fugit dolorum impedit
-              ipsam, perspiciatis quae incidunt itaque!
-            </p>
-          </div>
-        </div>
       </div>
     </>
   );

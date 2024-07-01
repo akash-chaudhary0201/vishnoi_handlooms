@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import "../Main/Main.css";
 
 const Achie = () => {
   const [counterOn, setCounterOn] = useState(false);
@@ -21,7 +22,7 @@ const Achie = () => {
 
   return (
     <>
-      <div className="bg-[#006769] p-[20px]  flex-col   gap-[20px] flex justify-center items-center">
+      <div className="bg-[#006769] p-[20px]  flex-col   gap-[20px] flex justify-center items-center akash">
         {achArr.map((item) => (
           <div className="bg-white backdrop-filter  flex items-center justify-around rounded-lg  backdrop-blur-sm  bg-opacity-50 relative z-10 text-center w-[200px] h-[120px]">
             <ScrollTrigger

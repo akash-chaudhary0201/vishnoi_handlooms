@@ -10,13 +10,13 @@ import Footer from "../Footer/Footer";
 const Main = () => {
   return (
     <>
-      <div className="relative h-screen overflow-hidden">
+      <div className="relative h-screen overflow-hidden akash">
         <img
           src={main}
           className="absolute inset-0 object-cover w-full h-full "
           alt=""
         />
-        <div className="">
+        <div className="akash">
           <div className="absolute flex  justify-center items-center pt-[150px] pl-[20px] pr-[20px]  ">
             <div>
               <p className="head_para text-[25px]">Vishnoi Handlooms</p>

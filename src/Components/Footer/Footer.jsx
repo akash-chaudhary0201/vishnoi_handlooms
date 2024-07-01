@@ -2,13 +2,14 @@ import React from "react";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
+import "../Main/Main.css";
 
 const Footer = () => {
   const footerItems = ["Home", "About", "Products", "Contact"];
 
   return (
     <>
-      <div className="flex justify-center items-center flex-col bg-[#006467] pt-[20px]">
+      <div className="flex justify-center items-center flex-col bg-[#006467] pt-[20px] akash">
         <div className=" flex lg:gap-[200px] sm:gap-[60px] md:gap-[100px] gap-[30px] w-auto">
           {footerItems.map((item) => (
             <div>
