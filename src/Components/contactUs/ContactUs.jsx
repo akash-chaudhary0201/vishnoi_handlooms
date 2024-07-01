@@ -1,11 +1,12 @@
 import React from "react";
 import Map from "./Mapp/Map";
 import Footer from "../Footer/Footer";
+import "../Main/Main.css";
 
 const ContactUs = () => {
   return (
     <>
-      <div className="pt-[70px] ">
+      <div className="pt-[70px] akash ">
         <Map />
         <div className="bg-[#EEEDEB] p-[20px] rounded-xl">
           <p className="text-[22px] text-[#006467]">Get in Touch</p>
