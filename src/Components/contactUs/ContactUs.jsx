@@ -6,9 +6,9 @@ import "../Main/Main.css";
 const ContactUs = () => {
   return (
     <>
-      <div className="pt-[70px] akash ">
+      <div className="pt-[70px] akash flex justify-center items-center flex-col md:flex-row">
         <Map />
-        <div className="bg-[#EEEDEB] p-[20px] rounded-xl">
+        <div className="bg-[#EEEDEB] p-[20px] rounded-xl h-[600px]">
           <p className="text-[22px] text-[#006467]">Get in Touch</p>
           <h1>
             Let's Chat, <span className="text-[#006467]">Reach Out</span> to Us
@@ -66,8 +66,8 @@ const ContactUs = () => {
             </form>
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
