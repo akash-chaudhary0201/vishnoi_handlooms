@@ -2,20 +2,34 @@ import React from "react";
 import "./about.css";
 import blob from "../../assets/blob.png";
 import Footer from "../Footer/Footer";
+import uncle from "../../assets/uncle.png";
 
 const About = () => {
   return (
     <>
       <div className="pt-[100px] akash">
-        <div className="flex flex-col justify-center items-center px-[20px] gap-[40px]">
+        <div className="flex flex-col justify-center items-center px-[20px] ">
           <h1 className="text-[45px] text-[#006476] text-center">About Us</h1>
-          <div className="flex justify-center items-center flex-col gap-[30px]">
-            <h1 className="text-[40px] text-center">
-              Vishnoi Handlooms: Tradition, Quality, and Style
-            </h1>
+          <div className="flex justify-center items-center lg:flex-row flex-col lg:gap-[100px] lg:px-[250px]">
             <div>
-              <img src={blob} alt="" />
+              <h1 className="text-[40px] text-center">
+                Vishnoi Handlooms: Tradition, <br /> Quality, and Style
+              </h1>
+              <p className="text-center lg:mt-[40px] text-[#006467]">
+                Transform your living space into a haven of elegance with
+                Vishnoi Handlooms. Our traditional yet contemporary designs
+                bring timeless beauty to every corner of your home.
+              </p>
             </div>
+            <div className="mt-[20px] mb-[20px]">
+              <img
+                src={uncle}
+                alt=""
+                className="rounded-full lg:h-[350px] lg:w-[700px] lg:object-cover"
+              />
+            </div>
+          </div>
+          <div className="lg:px-[250px]">
             <p className="text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
               officia dolorum aliquam alias soluta, eveniet quaerat commodi?
