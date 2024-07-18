@@ -19,9 +19,6 @@ const Main = () => {
         <div className="akash">
           <div className="absolute flex  justify-center items-center pt-[250px] pl-[20px] lg:px-[200px] lg:pt-[220px]">
             <div>
-              <p className="head_para text-[25px] lg:text-[40px]">
-                Vishnoi Handlooms
-              </p>
               <h1 className="text-[55px] text-[#006769] lg:text-[80px]">
                 Build Your Home Sweet Home
               </h1>

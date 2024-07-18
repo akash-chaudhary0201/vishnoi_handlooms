@@ -1,5 +1,30 @@
 
 .custom-navbar {
-    background-color: #006769; 
+    background-color: #006467; 
   }
   
+
+  .navbar.custom-navbar {
+    padding: 0 !important; /* Remove padding */
+  }
+  
+  .navbar.custom-navbar .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .navbar.custom-navbar .nav-link {
+    padding-top: 10px !important; /* Adjust padding as needed */
+    padding-bottom: 10px !important; /* Adjust padding as needed */
+  }
+  
+  .logo-container {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .logo-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }

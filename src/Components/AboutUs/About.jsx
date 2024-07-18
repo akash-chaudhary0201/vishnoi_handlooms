@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.css";
-import blob from "../../assets/blob.png";
 import Footer from "../Footer/Footer";
 import uncle from "../../assets/uncle.png";
 
@@ -16,7 +15,7 @@ const About = () => {
                 Vishnoi Handlooms: Tradition, <br /> Quality, and Style
               </h1>
               <p className="text-center lg:mt-[40px] text-[#006467]">
-                Transform your living space into a haven of elegance with
+                Transform your living space into a heaven of elegance with
                 Vishnoi Handlooms. Our traditional yet contemporary designs
                 bring timeless beauty to every corner of your home.
               </p>
@@ -40,8 +39,7 @@ const About = () => {
                 including bedsheets, sofa covers, mattress covers, pillow
                 covers, and cushion covers.
               </p>
-            </div>
-            <div>
+
               <p>
                 Our journey began with a vision to redefine the standards of
                 home textiles by blending traditional artistry with modern
