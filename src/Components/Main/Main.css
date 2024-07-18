@@ -2,7 +2,7 @@
 .main_para{
     position: relative;
 }
-.main_para::before{
+/* .main_para::before{
     content: "";
     height: 100%;
     width: 2%;
@@ -10,7 +10,7 @@
     border-radius: 20px;
     position: absolute;
     background-color: #006769;
-}
+} */
 
 
 .akash{

@@ -17,7 +17,7 @@ const Main = () => {
           alt=""
         />
         <div className="akash">
-          <div className="absolute flex  justify-center items-center pt-[150px] pl-[20px] pr-[20px]  ">
+          <div className="absolute flex  justify-center items-center pt-[250px] pl-[20px] pr-[20px]  ">
             <div>
               <p className="head_para text-[25px]">Vishnoi Handlooms</p>
               <h1 className="text-[55px] text-[#006769]">
