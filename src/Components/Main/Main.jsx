@@ -17,13 +17,15 @@ const Main = () => {
           alt=""
         />
         <div className="akash">
-          <div className="absolute flex  justify-center items-center pt-[250px] pl-[20px] pr-[20px]  ">
+          <div className="absolute flex  justify-center items-center pt-[250px] pl-[20px] lg:px-[200px] lg:pt-[220px]">
             <div>
-              <p className="head_para text-[25px]">Vishnoi Handlooms</p>
-              <h1 className="text-[55px] text-[#006769]">
+              <p className="head_para text-[25px] lg:text-[40px]">
+                Vishnoi Handlooms
+              </p>
+              <h1 className="text-[55px] text-[#006769] lg:text-[80px]">
                 Build Your Home Sweet Home
               </h1>
-              <p className="text-[20px] main_para ml-[20px] mt-[20px]">
+              <p className="text-[20px] main_para ml-[20px] mt-[20px] lg:text-[30px] text-white">
                 Welcome to Vishnoi Handlooms, where finding your perfect
                 furnishing elements for your home is just a few clicks away
               </p>
