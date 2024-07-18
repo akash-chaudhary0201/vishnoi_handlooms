@@ -22,6 +22,7 @@ const Main = () => {
               <h1 className="text-[55px] text-[#006769] lg:text-[80px]">
                 Build Your Home Sweet Home
               </h1>
+              {/* <h1>{window.innerWidth}</h1> */}
               <p className="text-[20px] main_para ml-[20px] mt-[20px] lg:text-[30px] text-white">
                 Welcome to Vishnoi Handlooms, where finding your perfect
                 furnishing elements for your home is just a few clicks away
