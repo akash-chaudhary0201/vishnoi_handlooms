@@ -18,7 +18,7 @@ const Footer = () => {
           ))}
         </div>
         <hr className="border-white w-full mt-[-10px]" />
-        <div className="flex justify-center items-center text-white flex-col">
+        <div className="flex justify-center items-center text-white flex-col lg:flex-row lg:gap-[200px]">
           <div className="flex justify-center items-center flex-col">
             <h1>Vishnoi Handlooms</h1>
             <p>COPYRIGHT 2024 | ALL RIGHT RESERVED</p>

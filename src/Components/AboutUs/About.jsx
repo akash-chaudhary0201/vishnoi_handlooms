@@ -29,21 +29,28 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="lg:px-[250px]">
-            <p className="text-center">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-              officia dolorum aliquam alias soluta, eveniet quaerat commodi?
-              Molestias ut accusamus dolorum amet porro ex eum cumque, ipsum,
-              culpa iusto pariatur! Maxime aliquam iusto dolorem corrupti sint,
-              corporis labore a reiciendis modi, fugit eos illo mollitia omnis
-              accusantium perspiciatis? Harum illo mollitia earum dolores id,
-              omnis totam! Tenetur obcaecati dolore possimus recusandae velit
-              doloribus autem officiis doloremque? Quasi consequuntur cumque
-              mollitia optio, vitae fugiat nobis quos at unde atque tenetur
-              minima minus recusandae libero explicabo temporibus molestias eos,
-              nulla reiciendis totam velit consequatur excepturi! Cum corporis
-              ipsa molestiae! Voluptatem, cupiditate hic.
-            </p>
+          <div className="lg:px-[250px] flex gap-[100px]">
+            <div>
+              <p className="">
+                At Vishnoi Handloom, we take pride in crafting exquisite home
+                textiles that add comfort, style, and elegance to your living
+                spaces. Established with a passion for quality craftsmanship and
+                a dedication to excellence, we specialize in the manufacturing
+                of a wide range of premium bedding and home decor essentials,
+                including bedsheets, sofa covers, mattress covers, pillow
+                covers, and cushion covers.
+              </p>
+            </div>
+            <div>
+              <p>
+                Our journey began with a vision to redefine the standards of
+                home textiles by blending traditional artistry with modern
+                innovation. Each piece in our collection is meticulously crafted
+                by skilled artisans, utilizing premium quality materials and
+                intricate designs to ensure utmost comfort, durability, and
+                aesthetic appeal.
+              </p>
+            </div>
           </div>
         </div>
         <Footer />
