@@ -42,7 +42,7 @@ const ProductDetails = () => {
                 products.map((product) => (
                   <div
                     key={product.id}
-                    className="m-10 bg-gradient-to-b from-[#4a7c7d] to-[#a6cacb] px-[30px] py-[30px] rounded-lg shadow-lg"
+                    className="m-10 bg-gradient-to-b from-[#3d6c6e]  px-[30px] py-[30px] rounded-lg "
                   >
                     <div className="">
                       <img
@@ -51,7 +51,7 @@ const ProductDetails = () => {
                         alt=""
                       />
                     </div>
-                    <h1 className="mt-[10px] text-white text-[30px]">
+                    <h1 className="mt-[10px] text-[#006467] text-[30px]">
                       {product.name}
                     </h1>
                   </div>

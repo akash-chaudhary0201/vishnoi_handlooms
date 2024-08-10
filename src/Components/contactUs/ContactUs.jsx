@@ -7,6 +7,7 @@ const ContactUs = () => {
   return (
     <>
       <div className="pt-[100px] akash flex justify-center items-center flex-col md:flex-row ">
+        s
         <Map />
         <div className="bg-[#EEEDEB] p-[20px] rounded-xl h-[600px] md:h-[800px]">
           <p className="text-[22px] text-[#006467]">Get in Touch</p>
