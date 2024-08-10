@@ -9,7 +9,7 @@ const Product = () => {
         style={{ backgroundImage: `url(${ak})` }}
         className="h-[80vh] bg-cover flex justify-center items-center relative bg-center bg-no-repeat bg-fixed"
       >
-        <h1 className="bg-white flex justify-center items-center backdrop-filter backdrop-blur-sm mt-[20px]  bg-opacity-50 p-[10px] w-[250px] text-[40px] rounded-lg text-[#006769]">
+        <h1 className="bg-white flex justify-center items-center backdrop-filter backdrop-blur-sm mt-[120px]  bg-opacity-50 p-[10px] w-[250px] text-[40px] rounded-lg text-[#006769]">
           Collection
         </h1>
       </div>
