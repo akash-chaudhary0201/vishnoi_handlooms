@@ -17,7 +17,7 @@ const ProductDetails = () => {
     setTimeout(() => {
       let fetchProducts = async () => {
         let response = await fetch(
-          `https://vashnoi-handloom-cms.vercel.app/api/resources/products?categoryId=${id}`
+          `https://vishnoi-handloom-cms.vercel.app/api/resources/products?categoryId=${id}`
         );
         let data = await response.json();
         setProducts(data);
@@ -42,8 +42,8 @@ const ProductDetails = () => {
       <div className="pt-[100px] akash flex justify-center items-center">
         <div>
           <h1 className="text-center">Products :- </h1>
-          <SkeletonTheme highlightColor="#a6cacb">
-            <div className="flex flex-wrap justify-center items-center ">
+          <SkeletonTheme highlightColor="#F6F5F2">
+            <div className="flex flex-wrap justify-center items-center">
               {isLoading ? (
                 <>
                   <SkeletonDiv />

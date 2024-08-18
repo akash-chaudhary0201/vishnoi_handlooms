@@ -11,7 +11,7 @@ const Swiper = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       let response = await fetch(
-        "https://vashnoi-handloom-cms.vercel.app/api/resources/categories"
+        "https://vishnoi-handloom-cms.vercel.app/api/resources/categories"
       );
       let data = await response.json();
       setCategories(data);

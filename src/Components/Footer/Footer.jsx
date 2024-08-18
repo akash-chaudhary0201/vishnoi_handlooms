@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div className="flex justify-center items-center flex-col bg-[#006467] pt-[20px] akash">
-        \{" "}
+        {" "}
         <div className="flex justify-center items-center text-white flex-col lg:flex-row lg:gap-[200px]">
           <div className="flex justify-center items-center flex-col">
             <h1>Vishnoi Handloom</h1>
