@@ -5,7 +5,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 const SkeletonDiv = () => {
   return (
     <>
-      <div className="m-10 bg-gradient-to-b from-[#86adaf] to-[#a6cacb] rounded-lg px-[30px] py-[30px] shadow-lg">
+      <div className="m-10 bg-gradient-to-b from-[#F1F1F1]  rounded-lg px-[30px] py-[30px] shadow-lg">
         <Skeleton circle={true} height={200} width={200} />
         <h1 className="mt-[10px] text-white text-[30px]">
           <Skeleton />

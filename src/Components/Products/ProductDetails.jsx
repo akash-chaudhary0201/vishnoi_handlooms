@@ -3,12 +3,14 @@ import { useParams } from "react-router-dom";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import SkeletonDiv from "../../skeleton/SkeletonDiv";
+import Modal from "../modal/Modal"; // Import the modal component
 
 const ProductDetails = () => {
   const { id } = useParams();
   const [products, setProducts] = useState([]);
-
   const [isLoading, setIsLoading] = useState(true);
+  const [selectedProduct, setSelectedProduct] = useState(null); // State for the selected product
+  const [showModal, setShowModal] = useState(false); // State to control modal visibility
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,8 +23,18 @@ const ProductDetails = () => {
         setIsLoading(false);
       };
       fetchProducts();
-    }, 500);
-  }, []);
+    });
+  }, [id]);
+
+  const handleShowModal = (product) => {
+    setSelectedProduct(product);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedProduct(null);
+  };
 
   return (
     <>
@@ -42,18 +54,25 @@ const ProductDetails = () => {
                 products.map((product) => (
                   <div
                     key={product.id}
-                    className="m-10 bg-gradient-to-b from-[#3d6c6e]  px-[30px] py-[30px] rounded-lg "
+                    className="m-10 bg-gradient-to-b from-[#d3d2d2]  px-[20px] py-[20px] rounded-lg "
                   >
                     <div className="">
                       <img
-                        className="h-[200px] w-[200px] rounded-full"
+                        className="h-[160px] w-[160px] rounded-full"
                         src={product.images[0].url}
-                        alt=""
+                        alt={product.name}
                       />
                     </div>
                     <h1 className="mt-[10px] text-[#006467] text-[30px]">
                       {product.name}
                     </h1>
+                    {/* <button
+                      onClick={() => handleShowModal(product)}
+                      className="mt-4 px-4 py-2 bg-[#006467] text-white rounded"
+                    >
+                      About this product
+                    </button> */}
+                    <p>{product.description}</p>
                   </div>
                 ))
               )}
@@ -61,6 +80,12 @@ const ProductDetails = () => {
           </SkeletonTheme>
         </div>
       </div>
+
+      <Modal
+        show={showModal}
+        onClose={handleCloseModal}
+        product={selectedProduct}
+      />
     </>
   );
 };

@@ -1,0 +1,14 @@
+/* Add this CSS to your stylesheet or within the component */
+.slick-dots li button:before {
+    font-size: 12px; /* Increase the size of the dots */
+    color: #006467; /* Change this color to ensure visibility */
+  }
+  
+  .slick-dots {
+    bottom: -30px; /* Adjust the position of the dots if necessary */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #000000; /* Change the color of the active dot */
+  }
+  
