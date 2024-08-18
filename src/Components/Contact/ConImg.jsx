@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../assets/consim.avif";
 import "../Main/Main.css";
+import { Link } from "react-router-dom";
 
 const ConImg = () => {
   return (
@@ -15,9 +16,11 @@ const ConImg = () => {
         <p className="text-lg md:text-xl lg:text-2xl">
           For any queries regarding products and business queries
         </p>
-        <button className="bg-[#006467] text-white px-4 py-2 mb-4 rounded-md text-base md:text-lg">
-          Contact Us
-        </button>
+        <Link to={"/contact"}>
+          <button className="bg-[#006467] px-10 text-white py-2 mt-2 rounded-lg">
+            Contact
+          </button>
+        </Link>
       </div>
     </div>
   );

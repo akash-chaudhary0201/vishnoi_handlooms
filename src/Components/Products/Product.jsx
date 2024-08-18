@@ -17,7 +17,6 @@ const Product = () => {
       <div className="flex justify-center text-center mt-[40px] overflow-hidden">
         <div className="w-full px-4">
           {" "}
-          {/* Added padding to avoid overflow */}
           <h1 className="text-[#006769] text-[30px] mb-[30px]">
             Choose what you want to buy
           </h1>

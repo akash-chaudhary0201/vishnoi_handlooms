@@ -4,7 +4,6 @@ import Main from "./Components/Main/Main";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Product from "./Components/Products/Product";
 import ProductDetails from "./Components/Products/ProductDetails";
-import Footer from "./Components/Footer/Footer";
 import About from "./Components/AboutUs/About";
 import "./index.css";
 import ContactUs from "./Components/contactUs/ContactUs";

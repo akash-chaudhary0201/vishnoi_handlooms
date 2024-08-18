@@ -48,21 +48,18 @@ const Swiper = () => {
     <div className="overflow-hidden pb-10">
       <Slider {...settings} key={categories.length}>
         {categories.map((c) => (
-          <div
-            key={c.id}
-            className="bg-gradient-to-b from-[#3d6c6e] to-white rounded-sm p-[20px] overflow-hidden"
-          >
-            <div className="flex justify-center m-auto items-center">
+          <div key={c.id} className=" rounded-sm p-[20px] overflow-hidden">
+            <div className="flex border-2 border-purple-200 h-56 w-56 rounded-full justify-center m-auto items-center">
               <img
                 src={c.imageUrl}
-                className="h-44 w-44 m-auto object-cover rounded-full"
+                className="h-56 p-2 w-56 m-auto object-cover rounded-full"
                 alt={c.name}
               />
             </div>
             <div>
               <h1 className="text-black text-[20px] mt-1">{c.name}</h1>
               <Link to={`/category/${c.id}`}>
-                <button className="bg-[#006467] px-10 text-white py-2 mt-6 rounded-lg">
+                <button className="bg-[#006467] px-10 text-white py-2 mt-2 rounded-lg">
                   See Products
                 </button>
               </Link>

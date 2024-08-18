@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import SkeletonDiv from "../../skeleton/SkeletonDiv";
-import Modal from "../modal/Modal"; // Import the modal component
+import Modal from "../modal/Modal";
+import "./pr.css";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -38,9 +39,9 @@ const ProductDetails = () => {
 
   return (
     <>
-      <div className="pt-[100px] flex justify-center items-center text-center">
+      <div className="pt-[100px] akash flex justify-center items-center">
         <div>
-          <h1>Products :- </h1>
+          <h1 className="text-center">Products :- </h1>
           <SkeletonTheme highlightColor="#a6cacb">
             <div className="flex flex-wrap justify-center items-center ">
               {isLoading ? (
@@ -52,27 +53,27 @@ const ProductDetails = () => {
                 </>
               ) : (
                 products.map((product) => (
-                  <div
-                    key={product.id}
-                    className="m-10 bg-gradient-to-b from-[#d3d2d2]  px-[20px] py-[20px] rounded-lg "
-                  >
-                    <div className="">
-                      <img
-                        className="h-[160px] w-[160px] rounded-full"
-                        src={product.images[0].url}
-                        alt={product.name}
-                      />
+                  <div className="m-3">
+                    <div className="w-[300px] h-[400px] relative overflow-hidden">
+                      <div className="relative overflow-hidden h-[250px] w-[250px]">
+                        <img
+                          onClick={() => handleShowModal(product)}
+                          className="transition-transform duration-700 transform hover:scale-105 cursor-pointer"
+                          src={product.images[0].url}
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h3 className="font-normal mb-1 text-[]">
+                          {product.name}
+                        </h3>
+
+                        <h5 className=" font-normal text-[#a1a0a0]">
+                          {product.description}
+                        </h5>
+                        <h4 className="font-bold mb-1">Rs. 100</h4>
+                      </div>
                     </div>
-                    <h1 className="mt-[10px] text-[#006467] text-[30px]">
-                      {product.name}
-                    </h1>
-                    {/* <button
-                      onClick={() => handleShowModal(product)}
-                      className="mt-4 px-4 py-2 bg-[#006467] text-white rounded"
-                    >
-                      About this product
-                    </button> */}
-                    <p>{product.description}</p>
                   </div>
                 ))
               )}

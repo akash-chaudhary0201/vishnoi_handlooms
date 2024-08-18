@@ -6,6 +6,7 @@ import Trust from "../trust/Trust";
 import Achie from "../ach/Achie";
 import ConImg from "../Contact/ConImg";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -24,12 +25,14 @@ const Main = () => {
               </h1>
               {/* <h1>{window.innerWidth}</h1> */}
               <p className="text-[20px] main_para ml-[20px] mt-[20px] lg:text-[30px] text-white">
-                Welcome to Vishnoi Handlooms, where finding your perfect
+                Welcome to Vishnoi Handloom, where finding your perfect
                 furnishing elements for your home is just a few clicks away
               </p>
-              <button className="bg-white backdrop-filter backdrop-blur-sm mt-[20px]  bg-opacity-50 p-[10px] w-[200px] text-[20px] rounded-lg text-[#006769]">
-                Explore More
-              </button>
+              <Link to={"/products"}>
+                <button className="bg-white backdrop-filter backdrop-blur-sm mt-[20px]  bg-opacity-50 p-[10px] w-[200px] text-[20px] rounded-lg text-[#006769]">
+                  Explore More
+                </button>
+              </Link>
             </div>
           </div>
         </div>
