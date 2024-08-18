@@ -10,10 +10,11 @@ const ProductDetails = () => {
   const { id } = useParams();
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedProduct, setSelectedProduct] = useState(null); // State for the selected product
-  const [showModal, setShowModal] = useState(false); // State to control modal visibility
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setTimeout(() => {
       let fetchProducts = async () => {
         let response = await fetch(
@@ -39,13 +40,17 @@ const ProductDetails = () => {
 
   return (
     <>
-      <div className="pt-[100px] akash flex justify-center items-center">
+      <div className="pt-[100px] akash mt-[10px] flex justify-center items-center">
         <div>
-          <h1 className="text-center">Products :- </h1>
+          <h1 className="text-center text-[#006467]">Products :- </h1>
           <SkeletonTheme highlightColor="#F6F5F2">
-            <div className="flex flex-wrap justify-center items-center">
+            <div className="flex flex-wrap ml-[40px] justify-center items-center">
               {isLoading ? (
                 <>
+                  <SkeletonDiv />
+                  <SkeletonDiv />
+                  <SkeletonDiv />
+                  <SkeletonDiv />
                   <SkeletonDiv />
                   <SkeletonDiv />
                   <SkeletonDiv />
@@ -53,7 +58,7 @@ const ProductDetails = () => {
                 </>
               ) : (
                 products.map((product) => (
-                  <div className="m-3">
+                  <div className="m-3 ">
                     <div className="w-[300px] h-[400px] relative overflow-hidden">
                       <div className="relative overflow-hidden h-[250px] w-[250px]">
                         <img

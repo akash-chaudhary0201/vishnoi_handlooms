@@ -2,6 +2,7 @@ import React from "react";
 import Map from "./Mapp/Map";
 import Footer from "../Footer/Footer";
 import "../Main/Main.css";
+import { IoIosCall } from "react-icons/io";
 
 const ContactUs = () => {
   return (

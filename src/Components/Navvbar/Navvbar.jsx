@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaUser } from "react-icons/fa";
 import "./Navbarr.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
@@ -14,7 +13,7 @@ const Navvbar = () => {
         fixed="top"
         collapseOnSelect
         expand="lg"
-        className="custom-navbar"
+        className="custom-navbar akash"
       >
         <Container>
           <div className="logo-container">
@@ -52,12 +51,6 @@ const Navvbar = () => {
                 className="fs-5 me-4 custom-nav-link text-white"
               >
                 Contact
-              </Nav.Link>
-              <Nav.Link
-                href="https://vashnoi-handloom-cms.vercel.app/"
-                className="fs-3 ms-2 text-white"
-              >
-                <FaUser />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
