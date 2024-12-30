@@ -50,7 +50,7 @@ const Swiper = () => {
       <Slider {...settings} key={categories.length}>
         {categories.map((c) => (
           <div key={c.id} className=" rounded-sm p-[20px] overflow-hidden">
-            <div className="flex border-2 border-purple-200 h-56 w-56 rounded-full justify-center m-auto items-center">
+            <div className="flex border-2 border-gray-300 h-56 w-56 rounded-full justify-center m-auto items-center">
               <img
                 src={c.imageUrl}
                 className="h-56 p-2 w-56 m-auto object-cover rounded-full"

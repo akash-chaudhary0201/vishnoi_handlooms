@@ -16,7 +16,7 @@ const Modal = ({ show, onClose, product }) => {
         onClick={handleOutsideClick}
       >
         <div className="flex">
-          <div className="h-[500px] w-[500px]">
+          <div className="h-[300px] w-[300px] sm:h-[300px] sm:w-[300px] lg:h-[500px] lg:w-[500px]">
             <img
               src={product.images[0].url}
               className=" sm:h-full sm:w-full lg:h-full lg:w-full "

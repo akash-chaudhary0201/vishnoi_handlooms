@@ -5,10 +5,14 @@ import "../Main/Main.css";
 import { IoIosCall } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
+import { Helmet } from "react-helmet";
 
 const ContactUs = () => {
   return (
     <>
+      <Helmet>
+        <title>Contact Us</title>
+      </Helmet>
       <div className="pt-[100px] akash flex justify-center items-center flex-col md:flex-row ">
         s
         <Map />
@@ -70,15 +74,26 @@ const ContactUs = () => {
             </form>
             <h2>You can connect with us :- </h2>
             <ul>
-              <li className="flex items-center text-[20px] text-[#006467]">
-                <IoIosCall className="mr-2" /> 9897353646
+              <li className="flex items-center text-[20px] cursor-pointer text-[#006467]">
+                <IoIosCall className="mr-2" />{" "}
+                <a
+                  href="tel:9897353646"
+                  className="text-[#006467] decoration-transparent"
+                >
+                  9897353646
+                </a>
               </li>
-              <li className="flex items-center text-[20px] text-[#006467] mt-[20px]">
-                <IoLogoWhatsapp className="mr-2" /> 9897353646
+              <li className="flex items-center text-[20px] text-[#006467] cursor-pointer mt-[20px]">
+                <IoLogoWhatsapp className="mr-2" />{" "}
+                <a
+                  href="https://wa.me/9897353646?text=I'm%20interested%20in%20your%20car%20for%20sale"
+                  className="text-[#006467] decoration-transparent"
+                >
+                  9897353646
+                </a>
               </li>
-              <li className="flex items-center text-[20px] text-[#006467] mt-[20px]">
-                <IoMdMail className="mr-2" /> manoj@vishnoihandloom.in,
-                manojvishnoi012@gmail.com
+              <li className="flex items-center text-[20px] text-[#006467] mt-[20px] cursor-pointer">
+                <IoMdMail className="mr-2" /> manoj@vishnoihandloom.in
               </li>
             </ul>
           </div>

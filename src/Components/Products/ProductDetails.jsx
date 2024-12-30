@@ -5,6 +5,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import SkeletonDiv from "../../skeleton/SkeletonDiv";
 import Modal from "../modal/Modal";
 import "./pr.css";
+import { Helmet } from "react-helmet";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -40,11 +41,14 @@ const ProductDetails = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Products</title>
+      </Helmet>
       <div className="pt-[100px] akash mt-[10px] flex justify-center items-center">
         <div>
           <h1 className="text-center text-[#006467]">Products :- </h1>
           <SkeletonTheme highlightColor="#F6F5F2">
-            <div className="flex flex-wrap ml-[40px] justify-center items-center">
+            <div className="flex flex-wrap  justify-center items-center">
               {isLoading ? (
                 <>
                   <SkeletonDiv />
@@ -58,25 +62,29 @@ const ProductDetails = () => {
                 </>
               ) : (
                 products.map((product) => (
-                  <div className="m-3 ">
-                    <div className="w-[300px] h-[400px] relative overflow-hidden">
-                      <div className="relative overflow-hidden h-[250px] w-[250px]">
-                        <img
-                          onClick={() => handleShowModal(product)}
-                          className="transition-transform duration-700 transform hover:scale-105 cursor-pointer"
-                          src={product.images[0].url}
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <h3 className="font-normal mb-1 text-[]">
-                          {product.name}
-                        </h3>
+                  <div className="flex flex-wrap justify-center items-center ml-[40px]">
+                    <div className="m-1">
+                      <div className="w-[300px] h-[400px] relative overflow-hidden">
+                        <div className="relative overflow-hidden h-[250px] w-[250px]">
+                          <img
+                            onClick={() => handleShowModal(product)}
+                            className="transition-transform duration-700 transform hover:scale-105 cursor-pointer"
+                            src={product.images[0].url}
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <h3 className="font-normal mb-1 text-[]">
+                            {product.name}
+                          </h3>
 
-                        <h5 className=" font-normal text-[#a1a0a0]">
-                          {product.description}
-                        </h5>
-                        <h4 className="font-bold mb-1">Rs. 100</h4>
+                          <h5 className=" font-normal text-[#a1a0a0]">
+                            {product.description}
+                          </h5>
+                          <h4 className="font-bold mb-1">
+                            Rs. {product.price}
+                          </h4>
+                        </div>
                       </div>
                     </div>
                   </div>

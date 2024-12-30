@@ -7,10 +7,14 @@ import Achie from "../ach/Achie";
 import ConImg from "../Contact/ConImg";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Main = () => {
   return (
     <>
+      <Helmet>
+        <title>Vishnoi Handloom</title>
+      </Helmet>
       <div className="relative h-screen overflow-hidden akash">
         <img
           src={main}
@@ -20,11 +24,12 @@ const Main = () => {
         <div className="akash">
           <div className="absolute flex  justify-center items-center pt-[250px] pl-[20px] lg:px-[200px] lg:pt-[220px]">
             <div>
-              <h1 className="text-[55px] text-[#006769] lg:text-[80px]">
-                Build Your Home Sweet Home
+              <p className="text-[25px] text-[#006467]">Vishnoi Handloom</p>
+              <h1 className="text-[55px] text-[#006769] lg:text-[50px]">
+                FURNISHING LIFE ENHANCING LIFE STYLE
               </h1>
               {/* <h1>{window.innerWidth}</h1> */}
-              <p className="text-[20px] main_para ml-[20px] mt-[20px] lg:text-[30px] text-white">
+              <p className="text-[20px] main_para ml-[20px] mt-[20px] lg:text-[25px] text-white">
                 Welcome to Vishnoi Handloom, where finding your perfect
                 furnishing elements for your home is just a few clicks away
               </p>

@@ -1,18 +1,22 @@
 import React from "react";
 import "./about.css";
 import Footer from "../Footer/Footer";
-import uncle from "../../assets/uncle.png";
+import uncle from "../../assets/upp.png";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       <div className="pt-[100px] akash">
         <div className="flex flex-col justify-center items-center px-[20px] ">
           <h1 className="text-[45px] text-[#006476] text-center">About Us</h1>
           <div className="flex justify-center items-center lg:flex-row flex-col lg:gap-[100px] lg:px-[250px]">
             <div>
               <h1 className="text-[40px] text-center">
-                Vishnoi Handlooms: Tradition, <br /> Quality, and Style
+                Vishnoi Handloom: Furnishing life enhancing lifestyle
               </h1>
               <p className="text-center lg:mt-[40px] text-[#006467]">
                 Transform your living space into a heaven of elegance with
@@ -24,7 +28,7 @@ const About = () => {
               <img
                 src={uncle}
                 alt=""
-                className="rounded-full lg:h-[350px] lg:w-[700px] lg:object-cover"
+                className="mb-[40px] lg:h-[350px] lg:w-[700px] lg:object-cover"
               />
             </div>
           </div>

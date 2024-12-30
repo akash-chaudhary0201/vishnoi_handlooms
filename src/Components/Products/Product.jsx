@@ -1,10 +1,14 @@
 import React from "react";
 import ak from "../../assets/akk.avif";
 import Swiper from "../swiper/Swiper";
+import { Helmet } from "react-helmet";
 
 const Product = () => {
   return (
     <>
+      <Helmet>
+        <title>Categories</title>
+      </Helmet>
       <div
         style={{ backgroundImage: `url(${ak})` }}
         className="h-[80vh] bg-cover flex justify-center items-center relative bg-center bg-no-repeat bg-fixed"

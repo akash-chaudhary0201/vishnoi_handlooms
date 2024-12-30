@@ -5,11 +5,14 @@ import "react-loading-skeleton/dist/skeleton.css";
 const SkeletonDiv = () => {
   return (
     <>
-      <div className="m-10 bg-gradient-to-b from-[#F1F1F1]  rounded-lg px-[30px] py-[30px] shadow-lg">
-        <Skeleton height={200} width={200} />
-        <h3 className="mt-[10px] text-white text-[30px]">
+      <div className="rounded-lg px-[30px] pb-[30px] ">
+        <Skeleton height={250} width={250} />
+        <h3 className="mt-[30px] text-white text-[30px]">
           <Skeleton />
         </h3>
+        <h5 className="mt-[10px] text-white text-[30px]">
+          <Skeleton />
+        </h5>
       </div>
     </>
   );

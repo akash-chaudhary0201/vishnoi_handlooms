@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Navbarr.css";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logg.png";
 
 const Navvbar = () => {
   return (
@@ -16,8 +16,12 @@ const Navvbar = () => {
         className="custom-navbar akash"
       >
         <Container>
-          <div className="logo-container">
-            <img src={logo} alt="Logo" className="logo-image" />
+          <div className="logo-container h-[100px] w-[100px]">
+            <img
+              src={logo}
+              alt="Logo"
+              className="logo-image h-full w-full object-contain"
+            />
           </div>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
