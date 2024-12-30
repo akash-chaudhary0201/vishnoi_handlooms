@@ -68,11 +68,12 @@ const ProductDetails = () => {
                         <div className="relative overflow-hidden h-[250px] w-[250px]">
                           <img
                             onClick={() => handleShowModal(product)}
-                            className="transition-transform duration-700 transform hover:scale-105 cursor-pointer"
+                            className="transition-transform duration-700 h-full w-full object-cover transform hover:scale-105 cursor-pointer"
                             src={product.images[0].url}
                             alt=""
                           />
                         </div>
+
                         <div>
                           <h3 className="font-normal mb-1 text-[]">
                             {product.name}
@@ -82,7 +83,9 @@ const ProductDetails = () => {
                             {product.description}
                           </h5>
                           <h4 className="font-bold mb-1">
-                            Rs. {product.price}
+                            {product.price && product.price > 0
+                              ? `Rs. ${product.price}`
+                              : null}
                           </h4>
                         </div>
                       </div>
