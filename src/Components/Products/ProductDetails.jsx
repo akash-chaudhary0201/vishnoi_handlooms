@@ -68,7 +68,7 @@ const ProductDetails = () => {
                         <div className="relative overflow-hidden h-[250px] w-[250px]">
                           <img
                             onClick={() => handleShowModal(product)}
-                            className="transition-transform duration-700 h-full w-full object-cover transform hover:scale-105 cursor-pointer"
+                            className="transition-transform duration-700  transform hover:scale-105 cursor-pointer"
                             src={product.images[0].url}
                             alt=""
                           />
